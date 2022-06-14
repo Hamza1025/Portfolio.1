@@ -1,0 +1,128 @@
+html, body, {
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
+
+body {
+    background-color: black;
+    
+}
+
+#hello-list {
+ list-style: none;
+ float: right;
+ color: white;
+}
+
+#hello-list li {
+    display: inline;
+    padding: 0px 5px;
+    text-decoration: underline;
+    font-size: 25px;
+    display: inline-block;
+    text-align: top;
+    font-weight: bold;
+
+
+}
+
+header img {
+    display: inline-block;
+    align-items: flex-start;
+    height: 60px;
+    padding: 0 10px;
+}
+
+header {
+    border-bottom: 1px solid seashell;
+    height: 69px;
+    
+}
+
+.container {
+    background-image: url(https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg);
+    background-repeat:no-repeat;
+    background-position: center;
+    height: 700px;
+    color: white;    
+    text-align: center;
+    padding-top: 10px;
+    
+    
+    
+}
+.container h2{
+    background-color: black;
+    font-weight: bold;
+    position: relative;
+    top: 30%;
+    font-size: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.container h4 {
+    background-color: black;
+    font-weight: bold;
+    position: relative;
+    top: 24%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 25px;
+}
+
+.container2 h2 {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 50px;
+}
+
+.container2 p {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+
+div.donuts {
+    vertical-align: top;
+    text-align: center;
+    width: 120px;
+    padding-left: 50em;
+}
+.dimage {
+    width: 25em;
+    height: auto;
+    background-color: grey;
+    
+}
+.caption {
+    display: block;
+    background-color: white;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+

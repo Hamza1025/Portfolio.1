@@ -4,9 +4,111 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./Rescoures/style.css">
+    
+
+    <title>Portfolio</title>
 </head>
 <body>
+    <nav>
+        <h1 id="logo">My Portfolio</h1>
+        <ul class="navigation-items">
+          <li class="navigation-item"><a href="#about-me">About Me</a></li>
+          <li class="navigation-item"><a href="#projects">Projects</a></li>
+          <li class="navigation-item"><a href="./contact.html" class="contact">Contact Me</a></li>
+        </ul>
+      </nav>
+
+    <main>
+        <section id="about-me">
+            <div class="about-me-container">
+              <div class="about-me-text-container">
+                <h2>About Me</h2>
+
+                <p>Hi! My name is Hamza. I am 23 years old.
+                    <br> 
+                    I have been learning to code since the start of 2022. 
+                    <br>
+                    My goal is to complete the coding course by the end of 2022 and become a software developer. 
+                </p>
+
+                <p> I believe myself to be a dependable and trustworthy individual who can operate alone with little supervision.
+                    <br>
+                    I am a timely person with excellent time management abilities in all facets of my life, 
+                    <br>
+                    both professional and personal. When necessary, I can adjust to various situations in a <br>
+                    resourceful manner.
+                    <br> 
+                    I have a wide range of transferable skills that benefit me in both work and school. 
+                    <br>
+                    I have outstanding communication abilities that I can apply to a variety of situations and people.
+                    <br>
+                     My ability to converse fluently in English, Urdu, and Punjabi is aided by my fluency.
+                    <br>
+                </p>
+
+                <p>In my free time I learn about new technologies, such as new software and how to programme new software
+                    <br> and see how it all works. 
+                    I enjoy reading books and participating in sports such as cricket and football. 
+                    <br>
+                    I also enjoy exploring new areas that I have never visited before.
+                </p>
+                <p>
+                    Fun fact! I've been programing for
+                    <span id="time-container">0</span> seconds!
+                  </p>
+              </div>
+              <img src="./Rescoures/Images/Screenshot 2022-06-11 at 15.42.42.png" alt="" class="me">
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <details class="Project1.1">
+                <summary class="project-title">
+                  <h3>Project 1</h3>
+                </summary>
+                <div class="framecon">
+                    <iframe scrolling="no" id="myframe" src="file:///Users/hamzamatloob/Desktop/Portfolio.1/Rescoures/projects%20to%20add/Project%201/index.html" allowfullscreen></iframe>
+                </div>    
+            </details>
+
+            <details class="Project1.1">
+                <summary class="project-title">
+                  <h3>Project 2</h3>
+                </summary>
+                <div class="framecon">
+                    <iframe scrolling="no" id="myframe" src="file:///Users/hamzamatloob/Desktop/Portfolio.1/Rescoures/projects%20to%20add/Project%202/index.html" allowfullscreen></iframe>
+                </div>    
+            </details>
+
+            <details class="Project1.1">
+                <summary class="project-title">
+                  <h3>Project 3</h3>
+                </summary>
+                <div class="framecon">
+                    <iframe scrolling="no" id="myframe" src="file:///Users/hamzamatloob/Desktop/Portfolio.1/Rescoures/projects%20to%20add/project%203/index.html" allowfullscreen></iframe>
+                </div>    
+            </details>
+            
+        </section>
+    </main>
+    <footer>Made by Hamza<br> <span class="heart">♥</span><br> Made in London</footer>
+
+    <script>
+        const timeContainer = document.getElementById("time-container");
+        const BIRTH_DAY = "12-10-1815";
+        const BIRTH_DAY_DATE = new Date(BIRTH_DAY);
+        const intlNumberFormatter = new Intl.NumberFormat("en-US");
     
+        setInterval(() => {
+          const now = new Date();
+          const difference = Math.floor(
+            (now.getTime() - BIRTH_DAY_DATE.getTime()) / 1000
+          );
+    
+          timeContainer.innerText = intlNumberFormatter.format(difference);
+        }, 1000);
+      </script>
+
 </body>
-</html>
