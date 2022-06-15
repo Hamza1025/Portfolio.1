@@ -163,4 +163,8 @@ input[type=submit]:hover {
     padding: 20px;
     margin-top: 5em;
   }
-
+ @media only screen and (max-width: 600px) {
+    .about-me-container {
+      flex-direction: column;
+    }
+  }
